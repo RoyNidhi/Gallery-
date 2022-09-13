@@ -1,0 +1,20 @@
+  @mixin grid ($grid: null, $justify:null, $align_item:null, $column:null, $rows:null, $gap:null) {
+    @if $grid !=null {
+      display: $grid;
+    }
+    @if $justify != null{
+      justify-content: $justify;
+    }
+    @if $align_item != null{
+      align-items: $align_item;
+    }
+    @if $column != null{
+        grid-template-columns: $column;
+    }
+    @if $rows != null{
+        grid-template-rows: $rows;
+    }
+    @if $gap != null{
+        grid-gap: $gap;
+    }
+  }
